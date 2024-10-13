@@ -1,0 +1,7 @@
+/* Style basique pour le texte */
+h1 {
+    color: red;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20%;
+}
