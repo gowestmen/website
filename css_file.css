@@ -45,7 +45,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:; /* Dark overlay */
+    background-color:#c27d7d; /* Dark overlay */
     color: #060606;
     display: flex;
     flex-direction: column;
