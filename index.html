@@ -63,12 +63,12 @@
   <!-- Lien PhotoSwipe js-->
   
   <!-- Lien fichier js -->
-  <script type="module">
-    import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
+  <script type="module" >
+    import PhotoSwipeLightbox from '/website/node_modules/photoswipe/dist/photoswipe-lightbox.esm.js';
     const lightbox = new PhotoSwipeLightbox({
       gallery: '.gallery--getting-started',
       children: 'a',
-      pswpModule: () => import('/photoswipe/dist/photoswipe-lightbox.esm.js')
+      pswpModule: () => import('/website/node_modules/photoswipe/dist/photoswipe.esm.js')
     });
     lightbox.init();
   </script>
