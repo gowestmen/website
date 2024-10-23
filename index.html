@@ -40,17 +40,17 @@
 
    <div class="section_2">  
     <div class="gallery--getting-started" id="gallery--getting-started">
-      <a href="images/carte_1.png" 
-        data-pswp-width="1343" 
-        data-pswp-height="951" 
-        target="_blank">
-        <img src="images/carte_1_thumbnail.png" alt="" />
+      <a href="images/carte_1.png" data-pswp-width="1343" data-pswp-height="951" target="_blank">
+      <img src="images/carte_1_thumbnail.png" alt="" />
       </a>
       <a href="images/carte_2.png" 
       data-pswp-width="1344" 
       data-pswp-height="950" 
       target="_blank">
       <img src="images/carte_2_thumbnail.png" alt="" />
+      <div class="hidden-caption-content"> <b>[Map]</b> Wealth and happiness index in the world's countries 
+        <br> <br> A cartogram showing GPD (shape deformation) and happiness index (colors) by country. Made with : <b>Libreoffice Calc - Qgis - ScapeToad - Rstudio - Adobe Illustrator </b>
+      </div>
     </a>
       </div>
   </div>
@@ -63,16 +63,6 @@
   <!-- Lien PhotoSwipe js-->
   
   <!-- Lien fichier js -->
-  <script type="module" >
- import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
-
-const lightbox = new PhotoSwipeLightbox({
-  gallery: '#gallery--getting-started',
-  children: 'a',
-  pswpModule: () => import('https://unpkg.com/photoswipe'),
-});
-
-lightbox.init();
-  </script>
+  <script type = module src="pwsp.js"></script>
 </body>
 </html>
