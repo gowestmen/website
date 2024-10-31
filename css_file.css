@@ -445,6 +445,7 @@ h1 {
 .section_2 a img {
     width: 200px;
     height: auto;
+    margin: 20px;
 }
 
 .pswp__custom-caption {
