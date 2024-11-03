@@ -429,9 +429,10 @@ h1 {
 #gallery_title {
     color: #33364a;
     background-color: #eeeeee; 
-    margin-top: 20px; 
-    margin-bottom: 30px;  
+    margin-top: 1em; 
+    margin-bottom: 1em;  
 }
+
 .section_2 {
     position: relative;
     background-color:#ffffff;
@@ -443,9 +444,13 @@ h1 {
 }
 
 .section_2 a img {
-    width: 200px;
+    width: 350px;
     height: auto;
-    margin: 20px;
+    align-items: center;
+    margin-top: 1em;
+    margin-left: 4em;
+    margin-bottom: 4em;
+    box-shadow:  0px 0px 8px #5e5e5e;
 }
 
 .pswp__custom-caption button {
@@ -475,4 +480,19 @@ h1 {
     display: none;
   }
 
+#click {
+    position:absolute;
+    width: 100px;
+    top: 5em;
+    left:12.5em;
+    z-index: 2;
+   
+}
 
+#click_txt{
+    position:absolute;
+    text-align: center;
+    font-size: 20px;
+    top: 3em;
+    left:4em;
+}
