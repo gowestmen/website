@@ -1,31 +1,14 @@
 @font-face {
-    font-family: 'PT Sans';
+    font-family: "Scope One", serif;
     font-style: normal;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+    src: url(https://gowestme.github.io/website/storymap/ScopeOne-Regular.ttf) format('truetype');
   }
-  @font-face {
-    font-family: 'PT Sans Narrow';
-    font-style: normal;
-    font-weight: 700;
-    src: url(https://fonts.gstatic.com/s/ptsansnarrow/v18/BngSUXNadjH0qYEzV7ab-oWlsbg95AiFW_g.ttf) format('truetype');
-  }
-  @font-face {
-    font-family: 'PT Serif';
-    font-style: italic;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/ptserif/v18/EJRTQgYoZZY2vCFuvAFT_r21dw.ttf) format('truetype');
-  }
-  @font-face {
-    font-family: 'PT Serif';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/ptserif/v18/EJRVQgYoZZY2vCFuvAFWzro.ttf) format('truetype');
-  }
+ 
   /*	Font Base
   ----------------------------------------------------- */
   .vco-storymap {
-    font-family: 'PT Serif', serif;
+    font-family: "Scope One", serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.3em;
@@ -47,22 +30,22 @@
     line-height: 58px;
   }
   .vco-storymap p {
-    font-family: 'PT Serif', serif;
+    font-family: "Scope One", serif;
     font-size: 16px;
     line-height: 1.3em;
   }
   .vco-storymap ul {
-    font-family: 'PT Serif', serif;
+    font-family: "Scope One", serif;
   }
   .vco-storymap .vco-media .vco-media-wikipedia h4 a {
-    font-family: 'PT Serif', serif;
+    font-family: "Scope One", serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
   }
   .vco-storymap .vco-caption,
   .vco-storymap .vco-credit {
-    font-family: 'PT Serif', serif;
+    font-family: "Scope One", serif;
   }
   .vco-storymap .vcard {
     font-family: 'PT Sans', sans-serif !important;
@@ -98,7 +81,7 @@
   }
   .vco-storymap blockquote,
   .vco-storymap blockquote p {
-    font-family: 'PT Serif', serif;
+    font-family: "Scope One", serif;
     font-style: italic;
     font-weight: 400;
     line-height: 1.3;

@@ -116,16 +116,7 @@ html, body {
             font = data.font_css;
         }
         
-        // if(font.indexOf("stock:") == 0) {
-        //     var font_name = font.split(':')[1];
-        //     var base_url = urlJoin(options.script_path,"../css/fonts");
-        //     font = urlJoin(base_url, "font." + font_name + ".css");
-        // } else if(!font.match('^(http|https|//)')) {
-        //     font = urlJoin(options.script_path, font);
-        
-        // } 
-
-        font = 'https://gowestmen.github.io/website/storymaps/font.css'
+       font = 'https://gowestmen.github.io/website/storymap/font.css'
 
         KLStoryMap.loadCSS(font,function(){ console.log('font loaded: ' + font);});
 	    storymap = new KLStoryMap.StoryMap('storymap-embed', data, options, {
