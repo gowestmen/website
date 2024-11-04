@@ -19,7 +19,7 @@
   .vco-storymap h4,
   .vco-storymap h5,
   .vco-storymap h6 {
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: "Scope One", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 46px;
@@ -48,14 +48,14 @@
     font-family: "Scope One", serif;
   }
   .vco-storymap .vcard {
-    font-family: 'PT Sans', sans-serif !important;
+    font-family: "Scope One", serif !important;
     font-weight: normal !important;
   }
   .vco-storymap .vco-slidenav-next,
   .vco-storymap .vco-slidenav-previous,
   .vco-storymap .vco-message,
   .vco-storymap .vco-slide-calltoaction-button-text {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "Scope One", serif;
     font-weight: 700;
     text-transform: none;
   }
@@ -67,7 +67,7 @@
   }
   .vco-storymap .vco-headline-date,
   .vco-storymap h3.vco-headline-date {
-    font-family: 'PT Sans', sans-serif !important;
+    font-family: "Scope One", serif !important;
     font-weight: normal !important;
     text-transform: uppercase !important;
   }
@@ -76,7 +76,7 @@
     font-weight: normal !important;
   }
   .vco-storymap .vco-menubar {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "Scope One", serif;
     text-transform: none;
   }
   .vco-storymap blockquote,
@@ -87,7 +87,7 @@
     line-height: 1.3;
   }
   input[type="text"].editor-headline {
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: "Scope One", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 46px;
