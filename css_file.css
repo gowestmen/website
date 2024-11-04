@@ -443,6 +443,18 @@ h1 {
     align-items: center;
 }
 
+.section_2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.2); /* Overlay noir semi-transparent */
+    z-index: 2; /* Assure que l'overlay est par-dessus l'image */
+    box-shadow: 0px 0px 8px #2c2c2c;
+}
+
 .section_2 a img {
     width: 25%;
     height: auto;
@@ -665,4 +677,28 @@ h1 {
         margin-bottom: 1em; 
         font-size: 30px; 
     }
+}
+
+
+/* #####################   SECTION 3 ####################### */
+
+.section_3 {
+    position: relative;
+    background-color:#33364a;
+    color: #060606;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_3 #gallery_title {
+    color: #33364a;
+    background-color: #eeeeee; 
+    margin-top: 1em; 
+    margin-bottom: 1em;    
+}
+
+#sm {
+    margin-bottom: 2em;
 }
