@@ -2,16 +2,18 @@
     font-family: "Scope One", serif;
     font-style: normal;
     font-weight: 400;
-    src: url(https://gowestme.github.io/website/storymap/ScopeOne-Regular.ttf) format('truetype');
+    src: url(https://gowestmen.github.io/website/storymap/ScopeOne-Regular.ttf) format('truetype');
   }
  
-  @font-face {
-    font-family: "Afacad Flux", sans-serif;
-	  font-optical-sizing: 16px;
-	  font-weight: 900;
-	  font-style: normal;
-    src: url(https://gowestme.github.io/website/storymap/AfacadFlux.ttf) format('truetype');
-  }
+ /* afacad-flux-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Afacad Flux';
+  font-style: normal;
+  font-weight: 900;
+  src: url('https://gowestmen.github.io/website/storymap/afacad-flux-v1-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 
   /*	Font Base
   ----------------------------------------------------- */
@@ -25,13 +27,34 @@
   .vco-storymap h2,
   .vco-storymap h3,
   .vco-storymap h4,
-  .vco-storymap h5,
   .vco-storymap h6 {
     font-family: "Afacad Flux", sans-serif;
     font-weight: 900;
-    font-size: 46px;
-    line-height: 46px;
+    font-size: 70px;
+    line-height: 20px;
   }
+
+  .vco-storymap #lr {
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 20px;
+  }
+
+  .vco-storymap #main {
+    font-family: "Scope One", serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    background-color: #33364a;
+  }
+
+  .vco-storymap #year {
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 900;
+    font-size: 26px; 
+  }
+
   .vco-storymap h2.vco-headline-title {
     font-size: 58px;
     line-height: 58px;
@@ -85,8 +108,6 @@
   .vco-storymap .vco-menubar {
     font-family: "Scope One", serif;
     text-transform: none;
-    color:#1a74e7; 
-    background-color: #1a74e7;
   }
   .vco-storymap blockquote,
   .vco-storymap blockquote p {

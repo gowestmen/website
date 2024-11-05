@@ -18,11 +18,6 @@
 <link rel="shortcut icon" href="//cdn.knightlab.com/libs/blueline/latest/assets/logos/favicon.ico">
 <link rel="stylesheet" href="//cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
 <link rel="alternate" type="application/json+oembed" href="https://oembed.knightlab.com/storymap/?url=https%3A//uploads.knightlab.com/storymapjs/8d9c3f8c32999f790086b3995fa45b5a/test-1/draft.html">
- <!-- Lien google font -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@900&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
 <script type="text/javascript" src="//cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
 <style>
 html, body {
@@ -31,7 +26,6 @@ html, body {
     padding: 0;
     margin: 0;
 }
-
 #storymap-embed {
     /*border: 1px solid #999;*/
 }
@@ -61,7 +55,7 @@ html, body {
 
 <script type="text/javascript">
     var storymap;
-    var storymap_url = 'draft.json';
+    var storymap_url = 'https://gowestmen.github.io/website/storymap/draft.json';
     const urlParams = new URLSearchParams(window.location.search);
 
 	function onStoryMapTitle(e) {
@@ -73,15 +67,11 @@ html, body {
         for(var i = 0; i < scriptTags.length; i++) {
             if(scriptTags[i].src.match(scriptname)) {
                 script_path = scriptTags[i].src;
-                console.log(script_path)
                 return script_path.split('?')[0].split('/').slice(0, -1).join('/');
-                
             }
         }
         return '';
     }
-    
-    
 
     function getStartSlide() {
         var slide = 0;
@@ -115,26 +105,32 @@ html, body {
             script_path: getScriptPath(/storymap(-min)?\.js/),
             start_at_slide: getStartSlide()
         };
-        var font = "stock:default";
-        if(data.font_css) {
-            font = data.font_css;
-        }
-        
-       font = 'https://gowestmen.github.io/website/storymap/font.css'
+        // var font = "stock:default";
+        // if(data.font_css) {
+        //     font = data.font_css;
+        // }
+        // if(font.indexOf("stock:") == 0) {
+        //     var font_name = font.split(':')[1];
+        //     var base_url = urlJoin(options.script_path,"../css/fonts");
+        //     font = urlJoin(base_url, "font." + font_name + ".css");
+        // } else if(!font.match('^(http|https|//)')) {
+        //     font = urlJoin(options.script_path, font);
+        // }
 
+        font = "https://gowestmen.github.io/website/storymap/font.css"
         KLStoryMap.loadCSS(font,function(){ console.log('font loaded: ' + font);});
 	    storymap = new KLStoryMap.StoryMap('storymap-embed', data, options, {
             title: onStoryMapTitle
         });
-        
+    
         var mapType = storymap.options.map_type;
         if(mapType && mapType.match('^zoomify.*')) {
             ga('send', 'event', 'StoryMapJS', 'zoomify', document.referrer)
         }
     }
-
+    
     (function() {
-     var test = fetch(storymap_url)
+        fetch(storymap_url)
             .then(response => response.json())
             .then(data => buildStoryMap(data));
     })();
