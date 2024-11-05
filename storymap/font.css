@@ -5,6 +5,14 @@
     src: url(https://gowestme.github.io/website/storymap/ScopeOne-Regular.ttf) format('truetype');
   }
  
+  @font-face {
+    font-family: "Afacad Flux", sans-serif;
+	  font-optical-sizing: 16px;
+	  font-weight: 900;
+	  font-style: normal;
+    src: url(https://gowestme.github.io/website/storymap/AfacadFlux.ttf) format('truetype');
+  }
+
   /*	Font Base
   ----------------------------------------------------- */
   .vco-storymap {
@@ -19,9 +27,9 @@
   .vco-storymap h4,
   .vco-storymap h5,
   .vco-storymap h6 {
-    font-family: "Scope One", sans-serif;
+    font-family: "Afacad Flux", sans-serif;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 46px;
     line-height: 46px;
   }
