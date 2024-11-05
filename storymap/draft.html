@@ -61,7 +61,7 @@ html, body {
 
 <script type="text/javascript">
     var storymap;
-    var storymap_url = '//uploads.knightlab.com/storymapjs/8d9c3f8c32999f790086b3995fa45b5a/test-1/draft.json';
+    var storymap_url = 'draft.json';
     const urlParams = new URLSearchParams(window.location.search);
 
 	function onStoryMapTitle(e) {
@@ -73,11 +73,15 @@ html, body {
         for(var i = 0; i < scriptTags.length; i++) {
             if(scriptTags[i].src.match(scriptname)) {
                 script_path = scriptTags[i].src;
+                console.log(script_path)
                 return script_path.split('?')[0].split('/').slice(0, -1).join('/');
+                
             }
         }
         return '';
     }
+    
+    
 
     function getStartSlide() {
         var slide = 0;
@@ -122,6 +126,7 @@ html, body {
 	    storymap = new KLStoryMap.StoryMap('storymap-embed', data, options, {
             title: onStoryMapTitle
         });
+        
         var mapType = storymap.options.map_type;
         if(mapType && mapType.match('^zoomify.*')) {
             ga('send', 'event', 'StoryMapJS', 'zoomify', document.referrer)
@@ -129,7 +134,7 @@ html, body {
     }
 
     (function() {
-        fetch(storymap_url)
+     var test = fetch(storymap_url)
             .then(response => response.json())
             .then(data => buildStoryMap(data));
     })();

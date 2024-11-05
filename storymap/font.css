@@ -28,7 +28,6 @@
   .vco-storymap h5,
   .vco-storymap h6 {
     font-family: "Afacad Flux", sans-serif;
-    text-transform: uppercase;
     font-weight: 900;
     font-size: 46px;
     line-height: 46px;
@@ -86,6 +85,8 @@
   .vco-storymap .vco-menubar {
     font-family: "Scope One", serif;
     text-transform: none;
+    color:#1a74e7; 
+    background-color: #1a74e7;
   }
   .vco-storymap blockquote,
   .vco-storymap blockquote p {
