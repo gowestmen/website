@@ -445,14 +445,15 @@ h1 {
 
 .section_2::before {
     content: '';
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.2); /* Overlay noir semi-transparent */
+    background-color: rgba(255, 255, 255, 0); /* Overlay noir semi-transparent */
     z-index: 2; /* Assure que l'overlay est par-dessus l'image */
-    box-shadow: 0px 0px 8px #2c2c2c;
+    box-shadow: 0px 2px 8px #2c2c2c;
 }
 
 .section_2 a img {
@@ -549,6 +550,21 @@ h1 {
         transform: rotate(35deg);
        
     }
+
+    .pswp__custom-caption {
+        background: rgba(255, 240, 164, 0.9);
+        font-size: 16px;
+        color: #000000;
+        width: calc(100% - 32px);
+        max-width: 300px;
+        padding: 2px 8px;
+        border-radius: 4px;
+        position: absolute;
+        left: 80%;
+        bottom: 16px;
+        transform: translateX(-50%);
+        box-shadow:  0px 0px 8px #2c2c2c;
+      }
 }
 
 /* #####################   SECTION 2 - écrans < 950 px ####################### */
@@ -628,6 +644,21 @@ h1 {
     #click_txt{
     display: none;
     }
+
+    .pswp__custom-caption {
+        background: rgba(255, 240, 164, 0.9);
+        font-size: 16px;
+        color: #000000;
+        width: calc(100% - 32px);
+        max-width: 300px;
+        padding: 2px 8px;
+        border-radius: 4px;
+        position: absolute;
+        left: 75%;
+        bottom: 16px;
+        transform: translateX(-50%);
+        box-shadow:  0px 0px 8px #2c2c2c;
+      }
 }
 
 /* #####################   SECTION 2 - écrans < 705 px ####################### */
@@ -643,6 +674,23 @@ h1 {
     }
 }
 
+/* #####################   SECTION 2 - écrans < 615 px ####################### */
+@media all and (max-width: 615px) {
+.pswp__custom-caption {
+    background: rgba(255, 240, 164, 0.9);
+    font-size: 16px;
+    color: #000000;
+    width: calc(100% - 32px);
+    max-width: 300px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    position: absolute;
+    left: 70%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    box-shadow:  0px 0px 8px #2c2c2c;
+  }
+}
 /* #####################   SECTION 2 - écrans < 580 px ####################### */
 
 @media all and (max-width: 580px) {
@@ -677,8 +725,58 @@ h1 {
         margin-bottom: 1em; 
         font-size: 30px; 
     }
+    .pswp__custom-caption {
+        background: rgba(255, 240, 164, 0.9);
+        font-size: 16px;
+        color: #000000;
+        width: calc(100% - 32px);
+        max-width: 300px;
+        padding: 2px 8px;
+        border-radius: 4px;
+        position: absolute;
+        left: 65%;
+        bottom: 16px;
+        transform: translateX(-50%);
+        box-shadow:  0px 0px 8px #2c2c2c;
+      }
 }
 
+/* #####################   SECTION 2 - écrans < 450 px ####################### */
+
+@media all and (max-width: 450px) {
+    .section_2 a img {
+        width: 200px;
+        height: auto;
+        align-items: center;
+        margin-top: 1em;
+        margin-left: 6em;
+        margin-bottom: 2em;
+        box-shadow:  0px 0px 8px #5e5e5e;
+    }
+
+    #gallery_title {
+        color: #33364a;
+        background-color: #eeeeee; 
+        margin-top: 1em; 
+        margin-bottom: 1em; 
+        font-size: 25px; 
+    }
+
+    .pswp__custom-caption {
+        background: rgba(255, 240, 164, 0.9);
+        font-size: 16px;
+        color: #000000;
+        width: calc(100% - 32px);
+        max-width: 300px;
+        padding: 2px 8px;
+        border-radius: 4px;
+        position: absolute;
+        left: 50%;
+        bottom: 16px;
+        transform: translateX(-50%);
+        box-shadow:  0px 0px 8px #2c2c2c;
+      }
+}
 
 /* #####################   SECTION 3 ####################### */
 
